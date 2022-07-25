@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Shoe Store</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="your_email_id">Your email id</string>
+    <string name="hello">Hello!</string>
+    <string name="login_or_sign_up_to_your_account">Login or Sign up to your account</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="create_account">Sign Up</string>
+    <string name="login">Sign In</string>
+    <string name="welcome_content_one">Welcome to our shoe store</string>
+    <string name="welcome_content_two">Here you will find everything you are looking for from different types of shoes and their different brands.</string>
+    <string name="welcome_content_three">Hope you enjoy your time in our app.</string>
+    <string name="next">NEXT</string>
+    <string name="instruction_content_one">1- When you open the application for the first time, you must create a new account and then press login.</string>
+    <string name="instruction_content_two">2- Then you will go directly to the welcome page.</string>
+    <string name="instruction_content_three">3- Then you will be taken to the instructions page, where you are currently standing.</string>
+    <string name="instruction_content_four">4- After that, you will go to the store where all the added shoes are displayed.</string>
+    <string name="instruction_content_five">5- From the buttons in the store, you will be taken to a page from which you can add shoes after filling in the required information about the shoes.</string>
+    <string name="shoe_name">Shoe Name</string>
+    <string name="enter_the_shoe_name">Enter the shoe name</string>
+    <string name="company_name">Company Name</string>
+    <string name="enter_the_company_name">Enter the company name</string>
+    <string name="shoe_size">Shoe Size</string>
+    <string name="enter_the_shoe_size">Enter the shoe size</string>
+    <string name="description">Description</string>
+    <string name="enter_the_description_of_the_shoes">Enter the description of the shoes</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="logout">Logout</string>
+</resources>

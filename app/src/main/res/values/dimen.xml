@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="marginSET">16dp</dimen>
+    <dimen name="marginLabelTop">30dp</dimen>
+    <dimen name="TextSize">24sp</dimen>
+    <dimen name="ButtonTextSize">18sp</dimen>
+    <dimen name="LabelSize">26sp</dimen>
+    <dimen name="shoeListTextSize">20sp</dimen>
+</resources>

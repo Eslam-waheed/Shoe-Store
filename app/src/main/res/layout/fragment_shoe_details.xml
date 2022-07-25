@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--
+        I used c in this fragment because I wanted to put
+        some of the views in different places and the constraint layout only the one
+        who has managed to do that as far as I know till now unlike the linear layout
+        that puts the views sequentially, either vertically or horizontally,
+        and this is what made me use the constraint layout without the linear layout.
+
+        I used the constraint layout in that fragment for the same reasons I used it in
+        the linear layout.
+    -->
+
+    <data>
+        <variable
+            name="shoe"
+            type="com.example.shoestore.ShoeListViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".shoeDetails.ShoeDetailsFragment">
+
+
+        <TextView
+            android:id="@+id/textView9"
+            android:text="@string/shoe_name"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="0dp"
+            style="@style/lapelStyle"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/shoeNameEditText"
+            android:hint="@string/enter_the_shoe_name"
+            android:text="@={shoe.shoeName}"
+            android:inputType="textPersonName"
+            app:layout_constraintTop_toBottomOf="@+id/textView9"
+            tools:layout_editor_absoluteX="0dp"
+            style="@style/editTextStyle"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView10"
+            style="@style/lapelStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/company_name"
+            app:layout_constraintTop_toBottomOf="@+id/shoeNameEditText"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="155dp" />
+
+        <EditText
+            android:id="@+id/companyNameEditText"
+            style="@style/editTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_the_company_name"
+            android:text="@={shoe.company}"
+            android:inputType="textPersonName"
+            app:layout_constraintTop_toBottomOf="@+id/textView10"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="41dp" />
+
+        <TextView
+            android:id="@+id/textView11"
+            style="@style/lapelStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shoe_size"
+            app:layout_constraintTop_toBottomOf="@+id/companyNameEditText"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="155dp" />
+
+        <EditText
+            android:id="@+id/shoeSizeEditText"
+            style="@style/editTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_the_shoe_size"
+            android:text="@={shoe.sizeName}"
+            android:inputType="number"
+            app:layout_constraintTop_toBottomOf="@+id/textView11"
+            tools:ignore="MissingConstraints,TextFields"
+            tools:layout_editor_absoluteX="41dp" />
+
+        <TextView
+            android:id="@+id/textView12"
+            style="@style/lapelStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/description"
+            app:layout_constraintTop_toBottomOf="@+id/shoeSizeEditText"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="155dp" />
+
+        <EditText
+            android:id="@+id/descriptionEditText"
+            style="@style/editTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_the_description_of_the_shoes"
+            android:text="@={shoe.description}"
+            android:inputType="textPersonName"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@+id/textView12"
+            tools:ignore="MissingConstraints,TextFields"
+            tools:layout_editor_absoluteX="41dp" />
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="220dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/save"
+            android:textSize="@dimen/ButtonTextSize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/descriptionEditText" />
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="220dp"
+            android:text="@string/cancel"
+            android:textSize="@dimen/ButtonTextSize"
+            app:layout_constraintBaseline_toBaselineOf="@+id/saveButton"
+            app:layout_constraintEnd_toStartOf="@+id/saveButton"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
